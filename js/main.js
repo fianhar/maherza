@@ -104,8 +104,8 @@
 		delay: 5000,
     	slides: [
        	{ src: "woods.jpg" },
-        	{ src: "greens.jpg" },
-        	{ src: "dandelion.jpg" }
+        	{ src: "/greens.jpg" },
+        	{ src: "/dandelion.jpg" }
     	]
 	});
 
