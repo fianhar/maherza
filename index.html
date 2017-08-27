@@ -1,220 +1,140 @@
-<html>
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>
-Reog Design
-</title>
-<!-- <meta content='10;url=http://blogger.com/' http-equiv='refresh'/> -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'/>
-<style>
-<!--
-/*
------------------------------------------------
-Email : reogdesign[at]gmail.com
------------------------------------------------ */
-/* CSS Reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,adnav,adheader{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-body {
-background-color: #11a9e2;
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0d86b3), to(#11a9e2));
-background-image: -moz-linear-gradient(#0d86b3, #11a9e2);
-background-repeat: no-repeat;
-padding: 100px;
-text-rendering: optimizeLegibility;
-font:15px 'Open Sans', 'lucida sans';
-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-color: #fff;
-color: rgba(255, 255, 255, 0.75);
-}
-#main, .descriptionwrapper{display:none;}
-b {	font-weight: 600;}
-a { font-weight: 600; text-decoration: none; -webkit-transiton: .2s all linear; transition: all 0.3s ease-out;}
-a:hover { text-shadow: 0 0 3px rgba(255, 255, 255, 0.5); }
-#atas{ margin-top: 10%;}
-#Header1 h1, h2, p, a {
-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-color: #fff;
-color: rgba(255, 255, 255, 0.75);
-}
-#Header1 h1 {
-text-align: center;
-margin: 0;
-font: bold 100px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
-color: #fff;
-text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
--webkit-transition: .2s all linear;
-}
-#Header1 h1:hover {
-cursor: text;
-}
-#Header1 h1:focus {
-outline: none;
-}
-.footer{   background-color: #0d86b3; position: fixed; bottom: 0; left: 0; height: 60px; line-height: 60px; width: 100%;}
-.footer .kiri{ float:left; margin-left:20px; font-size: 20px; font-weight: 600; line-height: 60px; }
-.footer .kanan{float:right; margin-right:20px; 	font-size: 70%;}
-a.tombol {
-background: #3cb0fd;
-background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
--webkit-border-radius: 50;
--moz-border-radius: 50;
-border-radius: 50px;
-color: #ffffff;
-font-size: 12px;
-padding: 5px 15px;
-margin-left: 10px;
-margin-top: -30px;
-text-decoration: none;
-}
-a.tombol:hover {
-background: #3498db;
-background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-background-image: -o-linear-gradient(top, #3498db, #2980b9);
-background-image: linear-gradient(to bottom, #3498db, #2980b9);
-text-decoration: none;}
-.disabled {cursor: not-allowed;}
-/* Popup/Modal Windows without JavaScript */
-.overlay {
-position: fixed;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-background: rgba(0, 0, 0, 0.7);
-transition: opacity 500ms;
-visibility: hidden;
-opacity: 0;
-}
-.overlay:target {
-visibility: visible;
-opacity: 1;
-}
-.popup {
-margin: 70px auto;
-padding: 20px;
-background: #0B7298;
-border-radius: 5px;
-width: 30%;
-position: relative;
-transition: all 5s ease-in-out;
-}
-.popup h2 {
-padding: 0;
-margin: 0 0 10px 0;
-border-bottom: 1px solid #fff;
-padding-bottom: 10px;
-font-size: 20px;
-font-weight: 600;
-}
-.popup .close {
-width: 10px;
-line-height: 10px;
-position: absolute;
-top: 5px;
-right: 5px;
-transition: all 200ms;
-font-size: 10px;
-font-weight: 800;
-text-decoration: none;
-color: #FFF;
-padding: 5px;
-border: 2px solid #fff;
-border-radius: 1000px;
-background-clip: padding-box;
-text-align: center;
-}
-.popup .close:hover { color: #ddd;   background: rgba(255,255,255,0.2);}
-.popup .content { max-height: 30%; overflow: auto; }
 
---></style>
-<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4466111377140051247&amp;zx=5bcb82a8-856a-4cb6-8a4e-19aae5f73c46' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4466111377140051247&amp;zx=5bcb82a8-856a-4cb6-8a4e-19aae5f73c46' rel='stylesheet'/></noscript>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Quatro - Slideshow</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
 </head>
-<body>
-<div id='atas'>
-<div class='header section' id='header' name='HEADER'><div class='widget Header' data-version='1' id='Header1'>
-<div id='header-inner'>
-<div class='titlewrapper'>
-<h1 class='title'>
-Reog Design
-</h1>
-</div>
-<div class='descriptionwrapper'>
-<p class='description'>
-<span>
-Reog Design Gallery
-</span>
-</p>
-</div>
-</div>
-</div></div>
-</div>
-<div class='main section' id='main' name='MAIN'><div class='widget Blog' data-version='1' id='Blog1'>
-<div class='blog-posts hfeed'>
-<div class='status-msg-wrap'>
-<div class='status-msg-body'>
-Tidak ada postingan.
-</div>
-<div class='status-msg-border'>
-<div class='status-msg-bg'>
-<div class='status-msg-hidden'>
-Tidak ada postingan.
-</div>
-</div>
-</div>
-</div>
-<div style='clear: both;'></div>
-</div>
-<div class='blog-pager' id='blog-pager'>
-<a class='home-link' href='http://reogdesign.blogspot.co.id/'>
-Beranda
-</a>
-</div>
-<div class='clear'></div>
-<div class='blog-feeds'>
-<div class='feed-links'>
-Langganan:
-<a class='feed-link' href='http://reogdesign.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>
-Postingan
-                (
-                Atom
-                )
-              </a>
-</div>
-</div>
-<script type="text/javascript">window.___gcfg = {'lang': 'in'};</script>
-</div></div>
-<div class='overlay' id='BeliBlog'>
-<div class='popup'>
-<h2>Saya Ingin Jadi Pemilik Blog.</h2>
-<a class='close' href='#'>X</a>
-<div class='content'>
-          Anda dapat menjadi pemilik blog <b>Reog Design</b>, hanya dengan mengganti <b>biaya perawatan</b>, jika minat kirim email ke : <br/>
-<a>reogdesign[@]gmail.com</a>.
-		</div>
-</div>
-</div>
-<div class='footer'>
-<div class='kiri'> Mau jadi pemilik blog ini? 
-        <a class='tombol' href='#BeliBlog'>YA</a>
-<a class='tombol disabled' href='#thanks'>TIDAK</a>
-</div>
-<div class='kanan'>
-        Works in the latest builds of Safari, Chrome, Firefox, and Opera.
-      </div>
-</div>
-<script src='https://apis.google.com/js/plusone.js' type='text/javascript'></script>
 
-<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2345592501-widgets.js"></script>
-<script type='text/javascript'>
-window['__wavt'] = 'AOuZoY5AnDXAOqLUw3fyqKYkdTQjDyhmOQ:1503559688941';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d4466111377140051247','//reogdesign.blogspot.co.id/','4466111377140051247');
-_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '4466111377140051247', 'title': 'Reog Design', 'url': 'http://reogdesign.blogspot.co.id/', 'canonicalUrl': 'http://reogdesign.blogspot.com/', 'homepageUrl': 'http://reogdesign.blogspot.co.id/', 'searchUrl': 'http://reogdesign.blogspot.co.id/search', 'canonicalHomepageUrl': 'http://reogdesign.blogspot.com/', 'blogspotFaviconUrl': 'http://reogdesign.blogspot.co.id/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'id', 'localeUnderscoreDelimited': 'id', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Reog Design - Atom\x22 href\x3d\x22http://reogdesign.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Reog Design - RSS\x22 href\x3d\x22http://reogdesign.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Reog Design - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/4466111377140051247/posts/default\x22 /\x3e\n', 'meTag': '\x3clink rel\x3d\x22me\x22 href\x3d\x22https://plus.google.com/113821722036595853817\x22 /\x3e\n', 'openIdOpTag': '\x3clink rel\x3d\x22openid.server\x22 href\x3d\x22https://www.blogger.com/openid-server.g\x22 /\x3e\n\x3clink rel\x3d\x22openid.delegate\x22 href\x3d\x22http://reogdesign.blogspot.com/\x22 /\x3e\n', 'googleProfileUrl': 'https://plus.google.com/113821722036595853817', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/66f57160f4e8453b', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sharing': {'platforms': [{'name': 'Dapatkan tautan', 'key': 'link', 'shareMessage': 'Dapatkan tautan', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Bagikan ke Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Bagikan ke Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Bagikan ke Pinterest', 'target': 'pinterest'}, {'name': 'Google+', 'key': 'googlePlus', 'shareMessage': 'Bagikan ke Google+', 'target': 'googleplus'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27id\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Baca selengkapnya', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Reog Design'}}, {'name': 'features', 'data': {'lazy_images': 'false', 'unsupported_browser_message': 'false', 'lightbox_img_parsing': 'false', 'video_theatre_support': 'false', 'sharing_get_link_dialog': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Tautan disalin ke papan klip!', 'ok': 'Oke', 'postLink': 'Tautan Pos'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Khusus', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Reog Design', 'description': 'Reog Design Gallery', 'url': 'http://reogdesign.blogspot.co.id/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
-_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
-_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'navMessage': 'Tidak ada postingan.', 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2692485528-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
-</script>
+<body>
+
+	<!-- header 
+   ================================================== -->
+   <header class="main-header">
+   	<div class="row">
+   		<div class="logo">
+	         <a href="index.html">Quatro</a>
+	      </div>   		
+   	</div>   
+
+   	<a class="menu-toggle" href="#"><span>Menu</span></a>	
+   </header> <!-- /header -->
+
+   <!-- navigation 
+   ================================================== -->
+   <nav id="menu-nav-wrap">
+
+   	<h5>Site Pages</h5>   	
+		<ul class="nav-list">
+			<li><a href="#" title="">Home</a></li>
+			<li><a href="#" title="">About</a></li>
+			<li><a href="#" title="">Portfolio</a></li>
+			<li><a href="#" title="">Blog</a></li>
+			<li><a href="#" title="">FAQ</a></li>					
+			<li><a href="#" title="">Contact</a></li>					
+		</ul>
+
+		<h5>Some Text</h5>  
+		<p>Lorem ipsum Non non Duis adipisicing pariatur eu enim Ut in aliqua dolor esse sed est in sit exercitation eiusmod aliquip consequat.</p>
+
+	</nav>
+
+	<!-- main content
+   ================================================== -->
+   <main id="main-404-content" class="main-content-slides">
+
+   	<div class="content-wrap">
+
+		   <div class="shadow-overlay"></div>
+
+		   <div class="main-content">
+		   	<div class="row">
+		   		<div class="col-twelve">
+			  		
+			  			<h1 class="kern-this">404 Error.</h1>
+			  			<p>
+						Oooooops! Looks like nothing was found at this location.
+						Maybe try on of the links below, click on the top menu
+						or try a search?
+			  			</p>
+
+			  			<div class="search">
+				      	<form>
+								<input type="text" id="s" name="s" class="search-field" placeholder="Type and hit enter …">
+							</form>
+				      </div>	   			
+
+			   	</div> <!-- /twelve --> 		   			
+		   	</div> <!-- /row -->    		 		
+		   </div> <!-- /main-content --> 
+
+		   <footer>
+		   	<div class="row">
+
+		   		<div class="col-seven tab-full social-links pull-right">
+			   		<ul>
+				   		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+					      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					      <li><a href="#"><i class="fa fa-instagram"></i></a></li>   			
+				   	</ul>
+			   	</div>
+		   			
+		  			<div class="col-five tab-full bottom-links">
+			   		<ul class="links">
+				   		<li><a href="#">Homepage</a></li>
+				         <li><a href="#">About</a></li>
+				         <li><a href="mailto:joe@quatro.com">Report Error</a></li>			                    
+				   	</ul>
+
+				   	<div class="credits">
+				   		<p>Design by <a href="http://www.styleshout.com/" title="styleshout">styleshout</a></p>
+				   	</div>
+			   	</div>   		   		
+
+		   	</div> <!-- /row -->    		  		
+		   </footer>
+
+		</div> <!-- /content-wrap -->
+   
+   </main> <!-- /main-404-content -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
 </body>
+
 </html>
